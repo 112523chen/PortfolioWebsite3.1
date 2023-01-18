@@ -1,0 +1,60 @@
+{
+  "SkillSet": [
+    {
+      "id": "programming",
+      "text": "Languages:",
+      "values": [
+        "Python",
+        "SQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Sass",
+        "Java",
+        "Bash",
+        "R"
+      ]
+    },
+    {
+      "id": "library",
+      "text": "Libraries:",
+      "values": [
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "NLTK",
+        "Redux",
+        "SciPy"
+      ]
+    },
+    {
+      "id": "framework",
+      "text": "Frameworks:",
+      "values": [
+        "Streamlit",
+        "React",
+        "Bootstrap",
+        "Node",
+        "Mocha",
+        "Jest",
+        "Express"
+      ]
+    },
+    {
+      "id": "tool",
+      "text": "Tools:",
+      "values": [
+        "GitHub",
+        "Git",
+        "Jupyter Notebooks",
+        "Excel",
+        "Data Studio",
+        "Tableau",
+        "Figma"
+      ]
+    }
+  ]
+}
