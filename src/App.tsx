@@ -4,7 +4,6 @@ import DisplayButton from "./components/DisplayButton/DisplayButton";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import { projectData } from "./assets/data/projectData.json";
-import "./styles/main.css";
 import { theme } from "./Styles/theme";
 
 const App: React.FC = () => {
