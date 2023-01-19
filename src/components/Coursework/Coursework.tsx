@@ -27,6 +27,9 @@ const CourseworkH2 = styled.h2`
   font-size: 3rem;
   padding: 0;
   margin: 0;
+  @media only screen and (max-width: 24rem) {
+    font-size: 2rem;
+  }
 `;
 
 const CourseworkHr = styled.hr`

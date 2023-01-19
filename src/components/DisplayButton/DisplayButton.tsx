@@ -10,6 +10,9 @@ const ModeDisplay = styled.div`
   position: absolute;
   right: 5%;
   top: 5%;
+  @media only screen and (max-width: 24rem) {
+    right: 10%;
+  }
 `;
 
 const Button = styled.button`
