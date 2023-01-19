@@ -17,6 +17,10 @@ const AboutBase = styled.div`
   padding-bottom: 0;
   padding-left: 20%;
   margin-block-end: 15rem;
+  @media only screen and (max-width: 24rem) {
+    padding: 0 min(5rem, 1rem);
+    /* margin-block: 10rem; */
+  }
 `;
 
 const AboutHeading = styled.div``;
@@ -25,6 +29,9 @@ const AboutH2 = styled.h2`
   font-size: 3rem;
   padding: 0;
   margin: 0;
+  @media only screen and (max-width: 24rem) {
+    font-size: 2rem;
+  }
 `;
 
 const AboutHr = styled.hr`

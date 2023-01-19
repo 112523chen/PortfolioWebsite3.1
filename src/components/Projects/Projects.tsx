@@ -17,6 +17,11 @@ const ProjectsBase = styled.div`
   padding-left: 20%;
   -webkit-margin-after: 15rem;
   margin-block-end: 15rem;
+  @media only screen and (max-width: 24rem) {
+    padding: 0 min(5rem, 1rem);
+    margin-block-start: 10rem;
+    margin-block-end: 3rem;
+  }
 `;
 
 const ProjectsHeading = styled.div``;
@@ -25,6 +30,9 @@ const ProjectsH2 = styled.h2`
   font-size: 3rem;
   padding: 0;
   margin: 0;
+  @media only screen and (max-width: 24rem) {
+    font-size: 2rem;
+  }
 `;
 
 const ProjectsHr = styled.hr`

@@ -14,6 +14,10 @@ const FooterBase = styled.footer`
   padding: 0 1rem;
   display: flex;
   margin-bottom: 0.5rem;
+  @media only screen and (max-width: 24rem) {
+    padding: 0 min(5rem, 1rem);
+    display: inline-block;
+  }
 `;
 
 const Left = styled.div`
@@ -30,16 +34,25 @@ const P = styled.p``;
 const Right = styled.div`
   margin-left: auto;
   margin-right: 0;
+  @media only screen and (max-width: 24rem) {
+    margin: 0 11%;
+  }
 `;
 
 const UL = styled.ul`
   display: flex;
   list-style-type: none;
   padding-left: 0;
+  @media only screen and (max-width: 24rem) {
+    justify-content: center;
+  }
 `;
 
 const LI = styled.li`
   padding-right: 1rem;
+  @media only screen and (max-width: 24rem) {
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const Link = styled.a<LinkModeProps>`

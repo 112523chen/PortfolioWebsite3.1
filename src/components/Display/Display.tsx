@@ -22,11 +22,19 @@ const DisplayBase = styled.div`
   margin-block-start: 15%;
   -webkit-margin-after: 35rem;
   margin-block-end: 35rem;
+  @media only screen and (max-width: 24rem) {
+    padding: 0 min(5rem, 1rem);
+    margin-block-start: 5rem;
+    margin-block-end: 10rem;
+  }
 `;
 
 const Name = styled.h1`
   font-size: 6rem;
   margin-bottom: 0rem;
+  @media only screen and (max-width: 24rem) {
+    font-size: 3rem;
+  }
 `;
 
 const DisplayHeadline = styled.div`
@@ -37,10 +45,15 @@ const DisplayHeadline = styled.div`
 
 const DisplayMobileHeadline = styled.div``;
 
-const DisplayMobileWord = styled.div`
+const DisplayMobileWord = styled.p`
   max-width: 45rem;
   min-width: 25rem;
   font-size: 2rem;
+  @media only screen and (max-width: 24rem) {
+    max-width: 88%;
+    min-width: 80%;
+    font-size: 1.5rem;
+  }
 `;
 
 const TypeWriterContainer = styled.div<DisplayModeProps>`
@@ -63,6 +76,10 @@ const DisplayStory = styled.div`
 const Story = styled.p`
     max-width: 36rem;
   font-size: 1.15rem;
+  @media only screen and (max-width: 24rem) {
+    letter-spacing: 0.794px;
+    max-width: 90%;
+  }
 }`;
 
 const Keywords = styled.span<DisplayModeProps>`
