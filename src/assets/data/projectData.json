@@ -3,11 +3,11 @@
     {
       "id": 12,
       "title": "Portfolio Website",
-      "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Sass",
-      "skills": ["React", "TypeScript", "Sass", "Jest"],
+      "details": "Created a web application/page to highlight projects and person brand with React, TypeScript, and Styled-Components",
+      "skills": ["React", "TypeScript", "Jest", "Styled-Components"],
       "isRepo": false,
       "isWebApp": true,
-      "link": "https://112523chen.github.io/PortfolioWebsiteV3/"
+      "link": "https://112523chen.github.io/PortfolioWebsite3.1/"
     },
     {
       "id": 11,
