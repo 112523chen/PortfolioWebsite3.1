@@ -1,24 +1,46 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface Props {
   mode: string;
   setMode: React.Dispatch<React.SetStateAction<string>>;
 }
 
+interface ButtonProps {
+  mode: string;
+  hoverColor: string;
+}
+
 const ModeDisplay = styled.div`
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 6%;
+  top: 6%;
   @media only screen and (max-width: 24rem) {
     right: 10%;
   }
 `;
 
-const Button = styled.button`
+const Button = styled.button<ButtonProps>`
   background: none;
   border: none;
   border-radius: 5px;
+  padding: 6px 6px;
+  display: flex;
+  transition: color 0.3s linear, box-shadow 0.3s linear;
+  &:hover {
+    background-color: ${(props) => props.hoverColor};
+    border: #b3b3b3 solid 2px;
+    padding: 4px;
+    box-shadow: 0 5px #7d7d7d;
+    color: ${(props) =>
+      props.mode === "light"
+        ? props.theme.color.lightMode.hover
+        : props.theme.color.darkMode.hover};
+  }
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
 `;
 
 const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
@@ -46,7 +68,8 @@ const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
     <ModeDisplay>
       {mode === "light" ? (
         <Button
-          style={{ backgroundColor: hoverState === true ? hoverColor : "" }}
+          mode={mode}
+          hoverColor={hoverColor}
           onClick={handleModeChange}
           onMouseEnter={() => {
             handleHoverEnter();
@@ -69,7 +92,8 @@ const DisplayButton2: React.FC<Props> = ({ mode, setMode }) => {
         </Button>
       ) : (
         <Button
-          style={{ backgroundColor: hoverState === true ? hoverColor : "" }}
+          mode={mode}
+          hoverColor={hoverColor}
           onClick={handleModeChange}
           onMouseEnter={() => {
             handleHoverEnter();

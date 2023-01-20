@@ -57,10 +57,10 @@ const DisplayMobileWord = styled.p`
 `;
 
 const TypeWriterContainer = styled.div<DisplayModeProps>`
-  height: 3rem;
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: bold;
+  height: fit-content;
   color: ${(props) =>
     props.mode === "light"
       ? props.theme.color.lightMode.accent
